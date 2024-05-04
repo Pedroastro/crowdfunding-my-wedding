@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site de doações para o casamento de Pedro Castro e Isabela Piros">
+    <meta name="author" content="Pedro Castro">
+    <link rel="stylesheet" href="../static/home.css">
+    <style>
+        :root {
+            --progress: {{progress}};
+        }
+
+        #progress-bar {
+            width: var(--progress);
+            height: 3vh;
+            background: linear-gradient(to right,
+                var(--accent2-color) var(--progress),
+                white
+            );
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function copyText() {
+        
+            // Copy the text inside the text field
+            navigator.clipboard.writeText("42707e9a-aa06-473e-bb17-117b4f309bfb");
+
+            var sb = document.getElementById("message-box");
+
+            //this is where the class name will be added & removed to activate the css
+            sb.className = "show";
+
+            setTimeout(()=>{ sb.className = sb.className.replace("show", ""); }, 3000);
+        }
+        </script>
+    <title>Contribua Casamento Pedro Castro e Isabela Piros</title>
+</head>
+<body>
+    <h1>Isabela &#38; Pedro</h1>
+    <div id="hero-image-container"><img src="../static/IMG_5511.PNG" id="hero-image" alt="Imagem de Pedro Castro e Isabela Piros sorrindo"></div>
+    <div>
+        <p>Contribua para o nosso casamento</p>
+        <div><div class="outer-background"><div class="white-background"><div id="progress-bar"></div></div></div></div>
+    </div>
+    <div>
+        <p>Copie a chave pix</p>
+        <p id="message-box">Chave Copiada</p>
+        <div id="pix-box">
+            <button id="copy-button" onclick="copyText()"><img src="../static/bxs-copy.svg" id="copy-image" alt="Botão de copiar chave pix"></button>
+            <p id="pix-key">42707e9a-aa06-473e-bb17-117b4f309bfb</p>
+        </div>
+    </div>
+    <table id="items-table">
+        <tr>
+            <th>Necessidade</th>
+            <th>Custo</th>
+        </tr>
+        <tr>
+            <td>Documentação</td>
+            <td>500 </td>
+        </tr>
+        <tr>
+            <td>Colchão</td>
+            <td>500 </td>
+        </tr>
+        <tr>
+            <td>Geladeira</td>
+            <td>2000 </td>
+        </tr>
+        <tr>
+            <td>Fogão</td>
+            <td>500 </td>
+        </tr>
+        <tr>
+            <td>Talheres</td>
+            <td>500 </td>
+        </tr>
+        <tr>
+            <td>Copos</td>
+            <td>20 </td>
+        </tr>
+        <tr>
+            <td>Pratos</td>
+            <td>50 </td>
+        </tr>
+        <tr>
+            <td>Panelas</td>
+            <td>300 </td>
+        </tr>
+        <tr>
+            <td>Escrivaninha</td>
+            <td>400 </td>
+        </tr>
+        <tr>
+            <td>Cadeira de escritório</td>
+            <td>500 </td>
+        </tr>
+        <tr>
+            <td>Máquina de lavar roupa</td>
+            <td>2000 </td>
+        </tr>
+        <tr>
+            <td>Varal</td>
+            <td>100 </td>
+        </tr>
+        <tr>
+            <td>Baldes</td>
+            <td>20 </td>
+        </tr>
+        <tr>
+            <td>Rodo</td>
+            <td>40 </td>
+        </tr>
+        <tr>
+            <td>Vassoura</td>
+            <td>30 </td>
+        </tr>
+        <tr>
+            <td>Pá de Vassoura</td>
+            <td>20 </td>
+        </tr>
+    </table>
+    <h2>Um pouco sobre nós</h2>
+    <p>Nós nos conhecemos desde a tenra infância mas foi durante a adolescência que nossas vidas mudaram para sempre. Sempre cercados do mesmo grupo de amigos e fundamentados sobre os mesmos princípios, nossa amizade pôde se desenvolver em um amor terno e companheiro. 
+        <br><br>
+        Nosso namoro começou em fevereiro de 2020 e desde então nos tornamos melhores amigos e nos apaixonamos mais a cada dia.
+        <br><br>
+        Em meio a altos e baixos, risadas e lágrimas, crescemos juntos, apoiando os sonhos e aspirações um do outro, e é com extrema alegria que decidimos dar o próximo passo e nos unirmos em matrimônio com a benção de Deus e da lei.
+        <br><br>
+        Convidamos todos que sentirem o desejo a contruibuir para o início dessa nova fase de nosso amor! 
+        <br><br>
+        Com amor e gratidão,
+        Isabela Piros &#38; Pedro Castro</p>
+</body>
+<footer>
+    <p>Feito por Pedro Castro</p>
+    <div id="social-media-icons">
+        <a href="https://github.com/Pedroastro"><img src="../static/bxl-github.svg" alt="Ícone e link para o Github de Pedro Castro"></a>
+    <a href="https://www.instagram.com/pedroms.castro/"><img src="../static/bxl-instagram.svg" alt="Ícone e link para o Instagram de Pedro Castro"></a>
+    </div>
+</footer>
+</html>
