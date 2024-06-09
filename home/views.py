@@ -53,7 +53,7 @@ def calculate_total_donated(dictionary):
     return total_donated
 
 def calculate_progress(total_donated):
-    progress = ((total_donated - 10000)*100)/AMMOUNT_NEEDED
+    progress = ((total_donated - 11500)*100)/AMMOUNT_NEEDED
     print(progress)
     return round(progress, 2)
 
